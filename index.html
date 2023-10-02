@@ -15,25 +15,27 @@
                 <img src="profile-pic.png" id="sidebar-pic" alt="Profile Picture">
             </div>
             <div class="navbar-details contact-details">
-                <h3>Contact:</h3>
-                <ul>
+                <h3 class="sidebar-header">Contact:</h3>
+                <ul class="sidebar-list">
                     <li>073 625 2269</li>
                     <li><a href="mailto:luhahn.boshoff@gmail.com">luhahn.boshoff@gmail.com</a></li>
                     <li>Stellenbosch</li>
             </div>
             <div class="navbar-details social-links">
-                <h3>Social:</h3>
-                <ul>
+                <h3 class="sidebar-header">Social:</h3>
+                <ul class="sidebar-list">
                     <li><a href="https://www.linkedin.com/in/luhahn-boshoff/" target="_blank">LinkedIn</a></li>
                     <li><a href="https://github.com/LDBoshoff" target="_blank">GitHub</a></li>
                 </ul>
             </div>
             <div class="navbar-details tech-stack">
-                <h3>Technologies:</h3>
-                <ul>
-                    <li>Java (Spring Boot)</li>
+                <h3 class="sidebar-header">Technologies:</h3>
+                <ul class="sidebar-list">
+                    <li>Java</li>
+                    <li>Spring Boot</li>
                     <li>Python</li>
                     <li>MySQL</li>
+                    <li>Git</li>
                     <li>JavaScript</li>
                     <li>HTML</li>
                     <li>CSS</li>
@@ -57,6 +59,56 @@
             
             <div class="text-sheet content-section">
                 <h2 id="projects-header">Projects:</h2>
+
+                <div class="project-card">
+                    <h2>Project Management System</h2>
+                    <p>Java Command-Line Project Management System</p>
+                    <div class="hidden-details">
+                        <h3>Overview:</h3>
+                        <p>The Java Command Line Project Management System is a robust and versatile program designed for an imaginary structural engineering firm. It was my first attempt at solving a real-world problem. This system simplifies project management tasks, allowing users to efficiently create, view, search, and update project details through a command-line interface. All project data is seamlessly stored in CSV files for easy access and retrieval. Despite its simplicity, it was a great learning oppurtunity and reinforeced my desire to continue exploring engineering solutions with code. </p>
+                        <h3>Key Features:</h3>
+                        <ul>
+                            <li><strong>Command Line Interface:</strong> The system boasts an intuitive command-line interface that guides users through various operations. Users can effortlessly navigate the program and perform tasks with ease.</li>
+                            <li><strong>Project Creation:</strong> With the ability to create new projects, users can input project details, including project number, name, type, address, ERF number, cost, paid amount, deadline, and key personnel information (architect, contractor, customer).</li>
+                            <li><strong>Project Viewing:</strong> Users can view all projects, ongoing projects, completed projects, and overdue projects. This feature provides a quick overview of project status and helps prioritize tasks.</li>
+                            <li><strong>Project Search:</strong> The search functionality allows users to find specific projects using project numbers or names. This feature ensures quick access to project details, making it easier to manage and update project information.</li>  
+                            <li><strong>Project Updates:</strong> Users can make real-time updates to project attributes, such as project number, name, type, address, ERF number, cost, paid amount, deadline, and key personnel information. Additionally, users can finalize projects, generate invoices, and mark projects as completed.</li>  
+                            <li><strong>Data Persistence:</strong> All project data is stored in CSV files, ensuring data integrity and persistence across program sessions. Projects can be retrieved and managed seamlessly.</li>  
+                            <li><strong>Error Handling:</strong> The system incorporates robust error handling, providing informative messages to users in case of incorrect inputs or unexpected errors.</li>  
+                        </ul>
+                        <h3>Technologies Used:</h3>
+                        <ul>
+                            <li>Java</li>
+                            <li>Object-oriented design principles for modular and maintainable code.</li>
+                            <li>CSV file handling for data storage and retrieval.</li>
+                            <li>Command-line interface for user interaction.</li>
+                        </ul>
+                        <h3>Benefits:</h3>
+                        <p>This project management system streamlines the workflow of a structural engineering firm, offering efficiency, organization, and ease of use. It empowers users to manage projects effectively, track progress, and generate invoices effortlessly. With its clean and intuitive design, the system is adaptable to various project management scenarios.</p>
+                        
+                        <h3>Critiques and Reflections:</h3>
+                        <p>While this project represents a significant achievement, I've identified areas where I would have done things differently or made improvements:</p>
+                        <ul>
+                            <li><strong>User Interface Enhancement:</strong> The command-line interface, while functional, could benefit from a more user-friendly and visually appealing design. Implementing a graphical user interface (GUI) could make the system even more accessible to users who may not be familiar with the command line.</li>
+                            <li><strong>Testing and Validation:</strong> In retrospect, I would have implemented more comprehensive testing and validation mechanisms to ensure data integrity and prevent input errors. Incorporating unit tests using JUnit and validation checks would enhance the system's robustness.</li>
+                            <li><strong>Documentation:</strong> Although the code is simple, additional documentation with JavaDoc, including comments, would make it easier for other developers to understand and contribute to the project.</li>
+                        </ul>
+                        
+                        <h3>Suggestions for Improvement:</h3>
+                        <p>In addition to my critiques, here are some suggestions for future improvements:</p>
+                        <ul>
+                            <li><strong>User Authentication:</strong> Implement user authentication to enhance security and restrict access to authorized users only. This could be crucial for real-world applications.</li>
+                            <li><strong>Database Integration:</strong> Consider transitioning from CSV storage to a relational database system for more efficient data management and scalability.</li>
+                            <li><strong>Data Backup and Recovery:</strong> Implement automatic data backup and recovery mechanisms to safeguard against data loss or corruption.</li>
+                            <li><strong>Design Pattern Integration:</strong> Explore the integration of design patterns like the Builder Pattern to enhance the construction of complex objects like Project instances. This refactoring can improve code readability and maintainability, especially as my project grows.</li>
+                        </ul>
+                        
+                        <h3>Conclusion:</h3>
+                        <p>The project showcases strong programming skills, including object-oriented design, user interface development, and data management. It's a valuable addition to any portfolio, demonstrating my ability to create practical and efficient software solutions for real-world scenarios, while also highlighting a commitment to ongoing improvement and learning.</p>
+
+                        <a href="https://github.com/LDBoshoff/project-management-system" target="_blank" class="github-button">View on GitHub</a>
+                    </div>
+                </div>
                 <div class="project-card">
                     <h3>Inventory Manager</h3>
                     <p>A basic fullstack inventory management app</p>
@@ -89,26 +141,7 @@
                         <a href="https://github.com/LDBoshoff?tab=repositories" target="_blank" class="github-button">View on GitHub</a>
                     </div>
                 </div>
-                <div class="project-card">
-                    <h3>Project Management System</h3>
-                    <p>A command-line Project Management System</p>
-                    <div class="hidden-details">
-                        <p><strong>Project Details:</strong></p>
-                        <p>This project represents a significant milestone in my journey as a self-taught software engineer. 
-                            It's a simple but comprehensive full-stack web application, which encompasses essential principles such as CRUD functionality 
-                            and user validation.</p>
-                            <p>Notably, the backend of this project is entirely powered by Java. 
-                            An intentional decision was made to refrain from relying on established frameworks like Spring Boot, 
-                            with the primary objective being a deep exploration of fundamental concepts.</p>     
-                            <p>Throughout the development of this web app, I delved into the intricacies of database management, user authentication, 
-                            and the seamless interaction between the frontend and backend components.</p>
-                            <p>It stands as a testament to my commitment to hands-on learning and my capacity to grasp core software engineering principles.           
-                            This project not only underscores my technical competence but also reflects my unwavering passion for creating robust and 
-                            innovative solutions. It's a testament to my dedication to the craft and my continuous pursuit of excellence in the field of 
-                            software engineering.</p>
-                        <a href="https://github.com/LDBoshoff/project-management-system" target="_blank" class="github-button">View on GitHub</a>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
