@@ -1,5 +1,5 @@
 :root {
-    --lightest: #fcfcfc;
+    --lightest: white;
     --main-color-lighter: #7283AB;
     --main-color: #2E4272;
     --main-color-darker: #081739;
@@ -9,12 +9,12 @@
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Young Sheriff';
-    color: var(--main-color)
+    color: var(--main-color-darker)
 }
 
 body {
     font-family: 'Lato', sans-serif;
-    background-color: var(--main-color-lighter);
+    background-color: var(--main-color);
     margin: 0; /* Remove default margin */
     width: calc(100vw -10px);
     height: 100vh;
@@ -34,6 +34,8 @@ body {
     padding: 20px;
     border-radius: 15px;
     margin: 10px;
+    /* box-shadow: h-shadow v-shadow blur spread color; */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 /*-------------------SIDEBAR------------------------*/
@@ -115,7 +117,34 @@ a:hover {
     text-align: center;
 }
   
+.project-description-header {
+    margin-top: 10px; /* Remove top margin from h3 headers */
+    margin-bottom: 10px;
+    font-size: 1.25rem; /* Adjust font size for h3 headers */ 
+}
 
+.common-section > div > strong {
+    float: left;
+    margin-right: 10px;
+}
+
+.common-section > div > p {
+    margin: 0;
+    text-align: left;
+}
+
+.github-button {
+    border: 1px solid var(--darkest); /* Add a 1px solid border with a black color */
+    padding: 5px 10px; /* Add padding to the button for better appearance */
+    text-decoration: none; /* Remove the default underline */ 
+    display: inline-block; /* Ensure the link appears as a block element */
+    border-radius: 5px; /* Add rounded corners to the border */
+}
+
+.github-button:hover {
+    background-color: #081739;
+    color: var(--lightest)
+}
 /*------------------Tablets and smaller screens------------------*/
 
 @media (max-width: 768px) {
